@@ -1,4 +1,4 @@
-package graphs;
+package coding_challanges.graphs;
 
 import java.util.Arrays;
 import java.util.List;
