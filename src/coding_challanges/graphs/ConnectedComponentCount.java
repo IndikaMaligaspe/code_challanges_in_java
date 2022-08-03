@@ -26,6 +26,9 @@ import java.util.stream.Stream;
  *  } -> 2
  */ 
 
+
+
+
 public class ConnectedComponentCount {
 //	Create an adjecent List
 	static Map<Integer,ArrayList<Integer>> graph = Stream.of(new Object[][] {
@@ -63,6 +66,6 @@ public class ConnectedComponentCount {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(countConnectedComponents(graph));
+		System.out.println("Component Count -> "+countConnectedComponents(graph));
 	}
 }
