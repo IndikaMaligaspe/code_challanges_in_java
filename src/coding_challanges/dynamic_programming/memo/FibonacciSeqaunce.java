@@ -1,4 +1,4 @@
-package coding_challanges.dynamic_programming;
+package coding_challanges.dynamic_programming.memo;
 
 import java.util.HashMap;
 import java.util.Map;
