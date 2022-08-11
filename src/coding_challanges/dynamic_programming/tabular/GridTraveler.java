@@ -19,17 +19,17 @@ import java.util.Collections;
 
 public class GridTraveler {
 	
-	public static int gridTraveler(int m, int n) {
+	public static long gridTraveler(int m, int n) {
 
-		int [][] table = new int[m+1][n+1];
-		for (int [] row: table) {
+		long [][] table = new long[m+1][n+1];
+		for (long [] row: table) {
 			Arrays.fill(row, 0);
 		}
 		table[1][1] = 1;
 		
 		for(int i=0; i<= m;i++) {
 			for(int j = 0; j <= n; j++) {
-				int current = table[i][j];
+				long current = table[i][j];
 				if(j + 1 <= n) table[i][j+1] += current;
 				if(i + 1 <= m) table[i + 1][j] += current;
 			}
@@ -38,6 +38,6 @@ public class GridTraveler {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(GridTraveler.gridTraveler(3, 3));
+		System.out.println(GridTraveler.gridTraveler(18, 18));
 	}
 }

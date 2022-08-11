@@ -50,7 +50,7 @@ public class Misc {
 //		}
 //		
 		
-		System.out.println(minPrice+" - "+minPriceIndex+" - "+sortedPrices);
+//		System.out.println(minPrice+" - "+minPriceIndex+" - "+sortedPrices);
 		return 0;
 	}
 	
