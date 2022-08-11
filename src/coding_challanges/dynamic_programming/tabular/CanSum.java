@@ -30,14 +30,14 @@ public class CanSum {
 			for( int j = i; j < table[i].length; j++) {
 				if (table[i -1][j] == 1) {
 					table[i][j] = 1;
-				} else if(j == arr[i-1]){
-					table[i][j] = 1;
+				} else if(j % arr[i-1] == 0){         //Note that modules makes the number repeatable
+					table[i][j] = 1;                  // If we do not want to repeat use if( j == arr[i-1]) 
 				} else if(j >= arr[i-1]){
 					table[i][j] = table[i - 1][j - arr[i-1]];
 				}
 			}
 		}
-		System.out.println("----------The complete 2D array after filling-------------------------");
+		System.out.println("----------The complete 2D array after filling, only for reading purpose-------------------------");
 		for(int i = 0; i < table.length; i++) {
 			for( int j = 0; j < table[i].length; j++) {
 				System.out.print("["+table[i][j]+"]");
@@ -50,6 +50,7 @@ public class CanSum {
 
 	
 	public static void main(String[] args) {
+		System.out.println(CanSum.canSum(new int [] {2,3}, 7));
 		System.out.println(CanSum.canSum(new int [] {5,3,4,7}, 7));
 		System.out.println(CanSum.canSum(new int [] {2,3,5}, 8));
 		System.out.println(CanSum.canSum(new int [] {2,4}, 7));
