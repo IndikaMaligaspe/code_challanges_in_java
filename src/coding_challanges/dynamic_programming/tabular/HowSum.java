@@ -44,16 +44,6 @@ public static ArrayList<Integer> howSum(int[] arr, int sum) {
 					var tArr = new ArrayList<Integer>(table.get(i));
 					tArr.add(arr[j]);
 					table.set(i+arr[j], tArr);
-//					var tArr = table.get(i+arr[j]);
-//					if(tArr == null) {
-//						ArrayList<Integer> temp = new ArrayList<Integer>(); 
-//						temp.add(arr[j]);
-//						if(i + arr[j] <= table.size())
-//							table.set(i + arr[j], temp);
-//					} else {
-//						ArrayList<Integer> temp = table.get(i+arr[j]);
-//							temp.add(arr[j]);
-//					}
 				}
 			}
 		}
@@ -63,9 +53,9 @@ public static ArrayList<Integer> howSum(int[] arr, int sum) {
 	}
 
 	public static void main(String[] args) {
-//		System.out.println(HowSum.howSum(new int [] {2,3}, 7));
-//		System.out.println(HowSum.howSum(new int [] {5,3,4,7}, 7));
+		System.out.println(HowSum.howSum(new int [] {2,3}, 7));
+		System.out.println(HowSum.howSum(new int [] {5,3,4,7}, 7));
 		System.out.println(HowSum.howSum(new int [] {2,3,5}, 8));
-//		System.out.println(HowSum.howSum(new int [] {2,4}, 7));
+		System.out.println(HowSum.howSum(new int [] {2,4}, 7));
 	}
 }
