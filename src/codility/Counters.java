@@ -1,7 +1,5 @@
 package codility;
 
-import java.util.Arrays;
-
 public class Counters {
 	public static int[] solution(int N, int[] A) {
 		int [] arr = new int[N];
